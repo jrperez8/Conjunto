@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bulma": "^0.9.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "npm": "^7.17.0",
+    "start": "^5.1.0"
+  }
+}
