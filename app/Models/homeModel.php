@@ -25,4 +25,19 @@ class HomeModel extends Model {
     $prueba = $this->db->query($sql)->getResult();
     return $prueba;
 }
+
+public function loginUser($username,$password){
+          
+  $cnx = mysqli_connect("localhost","root","","conjunto") or die ("Error al Conectar la Base de Datos");
+  $validatelogin = mysqli_query($cnx, "SELECT username FROM administrador WHERE username = '{$username}'");
+  if(mysqli_num_rows($validatelogin)>0){
+    $sql = "SELECT * FROM administrador WHERE username = '{$username}' AND password = '{$password}'";
+    $user = $this->db->query($sql)->getResult();
+    return $user;
+  }
+  else {    
+    echo "<h2>El Correo Electrónico no se encuentra Registrado Model</h2>";
+  }
+ 
+}
 }

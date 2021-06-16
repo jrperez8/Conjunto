@@ -88,10 +88,10 @@
         </div>
         <div class="modal-body">
         
-        <form method="POST" action="<?php echo base_url();?>/signin" onsubmit="return loginValidation()">
+        <form method="POST" action="<?php echo base_url();?>/signin">
                     <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
                     <div id="emailHelp" class="form-text">No tiene una Cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Cree una</a></div>
                     </div>
                     <div class="mb-3">
