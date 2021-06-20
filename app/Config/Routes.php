@@ -37,6 +37,7 @@ $routes->get('/perfil', 'PerfilController::index');
 $routes->post('/add', 'HomeController::addUser'); // adicionar usuario
 $routes->post('/signin', 'HomeController::signIn'); // ingreso usuario
 $routes->post('/signout', 'PerfilController::logOut'); // cerrar sesión
+$routes->post('/apto', 'PerfilController::addApto'); // agregar apto
 
 
 /*

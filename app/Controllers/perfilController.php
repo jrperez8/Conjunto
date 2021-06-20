@@ -26,4 +26,43 @@ class PerfilController extends BaseController
 		return redirect()->to('/');
 		
 }
+	public function addApto(){
+		$session = \Config\Services::session();
+		$request = \Config\Services::request();
+		$addModel = new PerfilModel();
+		$conjunto = $request->getPost ('conjunto');
+		$country = $request->getPost ('country');
+		$state = $request->getPost ('state');
+		$city = $request->getPost ('city');
+		$address = $request->getPost ('address');
+		$apto = $request->getPost ('apto');
+		$owner = $request->getPost ('owner');
+		$email = $request->getPost('email');
+		$phone = $request->getPost('phone');
+		$hab = $request->getPost('hab');
+		$cuota = $request->getPost('cuota');
+		$estado = $request->getPost('estado');
+		$ocupante = $request->getPost('ocupante');
+		$habitantes = $request->getPost('habitantes');		
+		
+		
+		$newuser = $addModel->addAptos($conjunto,$country,$state,$city,$address,$apto,$owner,$email,$phone,$hab,$cuota,$estado,$ocupante,$habitantes);
+		$getuser = $addModel->getApto($apto);
+
+		foreach ($getuser as $datouser) 
+			if(count($getuser)>0){
+				$newdata = [	
+					'apto' => $datouser->num_apto,							
+					'email' => $email,
+					'estado'=> $datouser->estado,						
+				];
+				$session->set($newdata);
+				return redirect()->to('/perfil');
+			}
+			else {
+				echo "El Correo Electrónico ya se Encuentra Registrado Controller";			
+			}
+		
+		}	
+
 }

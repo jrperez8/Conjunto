@@ -46,200 +46,82 @@
       <h2>Formulario de Registro de Inmuebles</h2>
       <p class="lead">Por favor diligencie la información completa de su inmueble. Esta sirve para realizar una gestión adecuada de cada propiedad.</p>
     </div>
-
-    <div class="row g-5">
-      <div class="col-md-5 col-lg-4 order-md-last">
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
-          <span class="text-primary">Your cart</span>
-          <span class="badge bg-primary rounded-pill">3</span>
-        </h4>
-        <ul class="list-group mb-3">
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Product name</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$12</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Second product</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$8</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Third item</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between bg-light">
-            <div class="text-success">
-              <h6 class="my-0">Promo code</h6>
-              <small>EXAMPLECODE</small>
-            </div>
-            <span class="text-success">−$5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
-            <strong>$20</strong>
-          </li>
-        </ul>
-
-        <form class="card p-2">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Promo code">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
-          </div>
-        </form>
+    <div class="row">
+      <div class="col-sm-8">
+      <form class="row g-3 needs-validation" action="<?php echo base_url(). '/apto'?>" method="POST" name="form1" onsubmit="return registerValidation()" enctype="multipart/form-data" novalidate>
+       <div class="col-md-12">
+         <label for="validationCustom01" class="form-label">Conjunto Residencial</label>
+         <input type="text" class="form-control" id="conjunto" name="conjunto" required>
       </div>
-      <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Información Inmueble</h4>
-        <form class="needs-validation" novalidate>
-          <div class="row g-3">
-          <div class="col-12">
-              <label for="username" class="form-label">Conjunto Residencial</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">Cr</span>
-                <input type="text" class="form-control" id="username" placeholder="" required>
-              <div class="invalid-feedback">
-                  Your username is required.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="country" class="form-label">Pais</label>
-              <select class="form-select" id="country" required>
-                <option value="">Elegir...</option>
-                <option>Colombia</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="state" class="form-label">Departamento</label>
-              <select class="form-select" id="state" required>
-                <option value="">Elegir...</option>
-                <option>Antioquia</option>                
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="state" class="form-label">Ciudad</label>
-              <select class="form-select" id="state" required>
-                <option value="">Elegir...</option>
-                <option>Medellin</option>
-                <option>Bello</option>
-                <option>Envigado</option>                
-                <option>Itagui</option>
-                <option>Sabaneta</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid town.
-              </div>
-            </div>
-            <div class="col-12">
-              <label for="address" class="form-label">Dirección</label>
-              <input type="text" class="form-control" id="address" placeholder="" required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <label for="firstName" class="form-label">Número de Inmueble</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
-
-            <div class="col-sm-9">
-              <label for="lastName" class="form-label">Nombre Propietario</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>           
-
-            <div class="col-12">
-              <label for="email" class="form-label">Email <span class="text-muted">(Propietario)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-            </div>           
-
-            <div class="col-12">
-              <label for="address2" class="form-label">Teléfono <span class="text-muted">(Propietario)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="">
-            </div>
-            
-            <div class="col-sm-3">
-              <label for="firstName" class="form-label">Cantidad de Habitantes</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
-
-            <div class="col-sm-9">
-              <label for="lastName" class="form-label">Valor Cuota Mensual</label>
-              <input type="text" class="form-control" id="lastName" placeholder="$" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>   
-          </div>           
-
-          <hr class="my-4">
-
-          <h4 class="mb-3">Información sobre ocupación del Inmueble</h4>
-
-          <div class="my-3">
-            <div class="form-check">
-              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="paypal">Propietario</label>
-            </div>
-            <div class="form-check">
-              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-              <label class="form-check-label" for="credit">Arrendado</label>
-            </div>
-            <div class="form-check">
-              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="debit">Embargado</label>
-            </div>            
-          </div>
-          <div class="row gy-3">
-            <div class="col-md-6">
-              <label for="cc-name" class="form-label">Nombre Ocupante <span class="text-muted">(En caso de estar Arrendado)</span></label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>              
-              <div class="invalid-feedback">
-                Name on card is required
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <label for="cc-number" class="form-label">Cantidad de Habitantes</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-              Cantidad de Habitantes es requerido
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-4">
-
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Guarda Información</button>
-        </form>
+      <div class="col-md-4">
+         <label for="validationCustom01" class="form-label">Pais</label>
+         <input type="text" class="form-control" id="country" name="country" required>
+      </div>
+      <div class="col-md-4">
+         <label for="validationCustom01" class="form-label">Departamento</label>
+         <input type="text" class="form-control" id="state" name="state" required>
+      </div>
+      <div class="col-md-4">
+         <label for="validationCustom01" class="form-label">Ciudad</label>
+         <input type="text" class="form-control" id="city" name="city" required>
+      </div>
+      <div class="col-md-12">
+         <label for="validationCustom01" class="form-label">Dirección</label>
+         <input type="text" class="form-control" id="address" name="address" required>
+      </div>
+      <div class="col-md-4">
+         <label for="validationCustom01" class="form-label">Número de Apartamento</label>
+         <input type="text" class="form-control" id="apto" name="apto" required>
+      </div> 
+      <div class="col-md-8">
+         <label for="validationCustom01" class="form-label">Propietario</label>
+         <input type="text" class="form-control" id="owner" name="owner" required>
+      </div>       
+      <div class="col-md-12">
+        <label for="validationCustomUsername" class="form-label">Email</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="email" name="email" aria-describedby="inputGroupPrepend" required>     
+        </div>
+      </div>
+  <div class="col-md-6">
+    <label for="validationCustomUsername" class="form-label">Teléfono Propietario</label>
+    <div class="input-group has-validation">
+     <input type="text" class="form-control" id="phone" name="phone" required>      
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustomUsername" class="form-label">Número de Ocupantes</label>
+    <div class="input-group has-validation">
+     <input type="text" class="form-control" id="hab" required>      
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Valor Cuota Administración</label>
+    <input type="text" class="form-control" id="cuota" name="cuota" placeholder="$" required>    
+  </div>
+      
+      <div>
+         <label for="">SELECCIONA QUIEN OCUPA ACTUALMENTE LA VIVIENDA</label>
+            <input class="form-check-input" type="radio" name="estado" value="propietario">PROPIETARIO</input>           
+            <input class="form-check-input" type="radio" name="estado" value="arriendo">ARRIENDO</input>             
+       </div>  
+       <div class="col-md-8">
+         <label for="validationCustom01" class="form-label">Nombre Arrendatario</label>
+         <input type="text" class="form-control" id="ocupante" name="ocupante" required>
+      </div>
+      <div class="col-md-8">
+         <label for="validationCustom01" class="form-label">Número de Ocupantes (Arriendo)</label>
+         <input type="text" class="form-control" id="habitantes" name="habitantes" required>
+      </div>
+        <div class="col-12">
+            <button type="submit" value="REGISTRARSE" class="btn btn-warning" id="btn_registro">Registrarse</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+         </div>
+      </form>
       </div>
     </div>
+  
   </main>
 </div>
 </section>
