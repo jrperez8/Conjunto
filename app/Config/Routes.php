@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'HomeController::index');
 $routes->get('/perfil', 'PerfilController::index');
+$routes->get('/aptos', 'AptosController::index');
 $routes->post('/add', 'HomeController::addUser'); // adicionar usuario
 $routes->post('/signin', 'HomeController::signIn'); // ingreso usuario
 $routes->post('/signout', 'PerfilController::logOut'); // cerrar sesión

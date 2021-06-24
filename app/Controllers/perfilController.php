@@ -47,17 +47,18 @@ class PerfilController extends BaseController
 		
 		
 		$newuser = $addModel->addAptos($conjunto,$country,$state,$city,$address,$apto,$owner,$email,$phone,$hab,$cuota,$estado,$ocupante,$habitantes);
-		$getuser = $addModel->getApto($apto);
+		$getuser = $addModel->getApto($conjunto);
 
 		foreach ($getuser as $datouser) 
 			if(count($getuser)>0){
 				$newdata = [	
+					'conjunto' => $datouser-> nombre_conjunto,
 					'apto' => $datouser->num_apto,							
 					'email' => $email,
 					'estado'=> $datouser->estado,						
 				];
 				$session->set($newdata);
-				return redirect()->to('/perfil');
+				return redirect()->to('/aptos');
 			}
 			else {
 				echo "El Correo Electrónico ya se Encuentra Registrado Controller";			

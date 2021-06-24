@@ -13,8 +13,8 @@ class PerfilModel extends Model {
         return $perfil->getResult();
         }
 
-    function getApto($apto){
-            $sql = "SELECT * FROM apartamentos WHERE num_apto={$apto}";
+    function getApto($conjunto){
+            $sql = "SELECT * FROM apartamentos WHERE nombre_conjunto='{$conjunto}'";
             $apto = $this->db->query($sql);
             return $apto->getResult();
         }

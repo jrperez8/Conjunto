@@ -115,7 +115,7 @@
          <input type="text" class="form-control" id="habitantes" name="habitantes" required>
       </div>
         <div class="col-12">
-            <button type="submit" value="REGISTRARSE" class="btn btn-warning" id="btn_registro">Registrarse</button>
+            <button type="submit" value="REGISTRARSE" class="btn btn-warning" id="btn_registro">Registrar</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
          </div>
       </form>
