@@ -37,7 +37,7 @@
                           <th scope="row">1</th>
                           <td>Enero</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorEnero" value="$120000" disabled></td>                              
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="enero" name="enero" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="enero" name="enero" onchange="Enero();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>
                             <option value="2">Mora</option>
@@ -48,7 +48,7 @@
                           <th scope="row">2</th>
                           <td>Febrero</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorFebrero" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="febrero" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="febrero" onchange="Febrero();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>                            
                             <option value="2">Mora</option>
@@ -59,7 +59,7 @@
                           <th scope="row">3</th>
                           <td>Marzo</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorMarzo" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="marzo" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="marzo" onchange="Marzo();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>                            
                             <option value="2">Mora</option>
@@ -70,7 +70,7 @@
                           <th scope="row">4</th>
                           <td>Abril</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorAbril" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="abril" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="abril" onchange="Abril();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>                            
                             <option value="2">Mora</option>
@@ -81,7 +81,7 @@
                           <th scope="row">5</th>
                           <td>Mayo</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorMayo" value="$120000" disabled></td>                       
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="mayo" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="mayo" onchange="Mayo();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>                            
                             <option value="2">Mora</option>
@@ -92,7 +92,7 @@
                           <th scope="row">6</th>
                           <td>Junio</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorJunio" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="junio" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="junio" onchange="Junio();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>                            
                             <option value="2">Mora</option>
@@ -103,7 +103,7 @@
                           <th scope="row">7</th>
                           <td>Julio</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorJulio" value="$120000" disabled></td>                       
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="julio" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="julio" onchange="Julio();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>
                             <option value="2">Mora</option>
@@ -114,7 +114,7 @@
                           <th scope="row">8</th>
                           <td>Agosto</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorAgosto" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="agosto" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="agosto" onchange="Agosto();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>
                             <option value="2">Mora</option>
@@ -125,7 +125,7 @@
                           <th scope="row">9</th>
                           <td>Septiembre</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorSeptiembre" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="septiembre" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="septiembre" onchange="Septiembre();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>
                             <option value="2">Mora</option>
@@ -136,7 +136,7 @@
                           <th scope="row">10</th>
                           <td>Octubre</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorOctubre" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="octubre" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="octubre" onchange="Octubre();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>
                             <option value="2">Mora</option>
@@ -147,7 +147,7 @@
                           <th scope="row">11</th>
                           <td>Noviembre</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorNoviembre" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="noviembre" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="noviembre" onchange="Noviembre();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>
                             <option value="2">Mora</option>
@@ -158,7 +158,7 @@
                           <th scope="row">12</th>
                           <td>Diciembre</td>
                           <td><input class="form-control form-control-sm" type="text" placeholder="$" aria-label=".form-control-sm example" id="valorDiciembre" value="$120000" disabled></td>                        
-                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="diciembre" onchange="btnConfirmar();">
+                          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example" id="diciembre" onchange="Diciembre();">
                             <option selected>Seleccione una ópcion</option>
                             <option value="1">Al día</option>
                             <option value="2">Mora</option>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary" onclick="return btnConfirmar()">Guardar Cambios</button>
+                      <button type="button" class="btn btn-primary" onclick="return resultado()">Guardar Cambios</button>
                     </div>
                   </div>     
                 </div>
@@ -178,8 +178,7 @@
             </div>         
             <?php endforeach ?> 
           </div>          
-        </div>   
-        
+        </div>         
       <script src="<?php echo base_URL();?>/assets/js/validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
